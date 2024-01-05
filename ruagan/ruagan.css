@@ -1,0 +1,257 @@
+html {
+  background-color: purple;
+}
+
+html:active {
+  background: rgba(157, 255, 0, 0.801);
+  font-weight: bold;
+}
+// Highlight
+::selection {
+  background: rgb(228, 0, 228);
+}
+
+body {
+  margin: 0;
+}
+
+.top {
+  Padding-top: 21px;
+  background-color: black;
+  padding-bottom: 74px;
+  box-sizing: border-box;
+}
+
+
+.Navigation li {
+  animation: linkbounce .7s;
+  animation-delay: .01s;
+  list-style: none;
+  float: left;
+}
+
+.Navigation ul {
+  margin: 0;
+  padding: 0;
+}
+
+.Navigation {
+  margin-top:10px;
+}
+
+
+.Navigation a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 24px 21px;
+  background-color: black;
+  border: 3px solid black;
+}
+
+.Navigation a:hover {
+  border-bottom: 3px solid rgb(221, 221, 221);
+}
+
+
+.Right1 li {
+  list-style: none;
+  float: right;
+}
+
+.Right1 ul {
+  margin: 0;
+  padding: 0;
+}
+
+.Right1 {
+  margin-top:10px;
+  padding-right: 5px;
+}
+
+.Right1 a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 24px 24px;
+  background-color: black;
+  border: 3px solid black;
+
+}
+
+.Right1 a:hover {
+  border-bottom: 3px solid rgb(221, 221, 221);
+}
+
+.row:before,
+.row:after,
+:before;
+.group:after {
+  content: "";
+  display: table;
+}
+
+.row:after,
+.group:after {
+  clear: both;
+}
+
+.row,
+.group {
+  zoom: 1;
+}
+
+.grey {
+  color: black;
+  border-bottom: 4px solid rgb(91, 91, 91);
+}
+
+
+.logotop img {
+  transform: translateX(115%) scale(.5);
+  max-width: 31%;
+  position: relative;
+  top: 0px;
+  overflow: hidden;
+  display: block;
+}
+
+.paragraph {
+  font-size: 14pt;
+  padding-left: 24px;
+  padding-right: 24px;
+  color: rgb(221, 221, 221);
+  text-align: justify;
+  font-weight: bold;
+}
+
+.Picture {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  size: 40%;
+  max-width: 998px;
+  top: 70px;
+  overflow: hidden;
+}
+
+.picture-centre {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.logo img {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 30%;
+}
+
+.middle img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.White a {
+  text-decoration: none;
+  float: left;
+  color: white;
+}
+
+.turn img {
+  transition: all 1s ease-in-out;
+  transform: rotate(360deg);
+}
+
+.turn:hover {
+  transform: rotate(360deg);
+}
+
+.turn:active {
+  transform: rotate(360deg);
+}
+
+.footer1 {
+  margin-right: none;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  box-sizing: border-box;
+
+}
+
+.no_underline-white {
+  color: white;
+  text-decoration: none;
+  transition: all .2s;
+}
+
+.no_underline-white:hover {
+  color: rgb(233, 233, 233);
+}
+
+.mainWriting {
+  color: white;
+  margin-left: 10px;
+}
+
+.picturebackground {
+  margin-right: 10px;
+  margin-top: 47px;
+  float: right;
+}
+
+.picturebackground a {
+  display: inline-block;
+  width: 41px;
+  height: 35px;
+  background-image: url(../RuaGanPictures/ruaganLink.png);
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+}
+
+.ruagan {
+  background-position: 0 0;
+}
+
+.ruagan:hover {
+  background-position: -40px 0;
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  cursor: pointer;
+  background: rgb(117, 2, 170);
+  border-radius: 11px;
+}
+body::-webkit-scrollbar-track:active {
+  background: rgb(248, 255, 248);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(199, 77, 255);
+  transition: all .1s;
+  border-radius: 21px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(210, 113, 255);
+}
+body::-webkit-scrollbar-thumb:active {
+  background: lime;
+}
+//    PARTY MODE   \\
+/*:root {
+  --highlight-color: null;
+}
+
+::selection {
+  background: var(--highlight-color);
+}*/
