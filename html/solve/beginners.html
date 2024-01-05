@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="../../pictures/logo/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RuMac - Beginner's Method | 3x3</title>
+    <link rel="stylesheet" href="../../css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../../css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/lightbox.css">
+
+    <script type="text/javascript" src="../../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../../js/jquery.js"></script>
+    <script type="text/javascript" src="../../js/script.js"></script>
+    <script type="text/javascript" src="../../js/lightbox.js"></script>
+  </head>
+  <body>
+    <p class="signin" title="Sign In"><a class="signIn" href="../signin.html">Sign In</a></p>
+    <p class="button-img d-none d-md-block" title="Basket"><a class="../basket.html" href="basket.html">Basket</a></p>
+    <p class="button-img d-none d-md-block" title="Wishlist"><a class="../wishlist.html" href="wishlist.html">Wishlist</a></p>
+    <div class="nav-background">
+      
+      <nav id="mininav">
+        <ul>
+          <li><img id="navimg" src="../../pictures/mininav/home.png"><a href="../../index.html">Home</a></li>
+          <li><img id="navimg2" src="../../pictures/mininav/solve.png"><a href="solve.html">Solve</a></li>
+          <li><img id="navimg" src="../../pictures/mininav/comments.png">&nbsp;<a href="../comments.html">Comments</a></li>
+          <li><img id="navimg2" src="../../pictures/mininav/dot.png"><a href="../shop/shop.html">Shop</a></li>
+          <li class="indent"><img id="navimg" src="../../pictures/mininav/wishlist.png">&nbsp;<a href="../wishlist.html">Wishlist</a></li>
+          <li class="indent"><img id="navimg2" src="../../pictures/mininav/basket.png">&nbsp;<a href="../basket.html">Basket</a></li>
+          <li class="disabledlink"><img id="navimg" src="../../pictures/mininav/light.png">&nbsp;<a href="#">Light&nbsp;Mode</a></li>
+          <li><img id="navimg2" src="../../pictures/mininav/dark.png">&nbsp;<a href="#">Dark&nbsp;Mode</a></li>
+          <li class="disabledlink"><img id="navimg" src="../../pictures/mininav/gai.png">&nbsp;<a href="#">G&agrave;idhlig</a></li>
+          <li><img id="navimg2" src="../../pictures/mininav/eng.png">&nbsp;<a href="#">English</a></li>
+        </ul>
+      </nav>
+      
+      <div class="nav-background-img">
+        <div class="rumacwriting">
+          <img class="writingimg" src="../../pictures/logo/rumacwriting.png" alt="RuMac">
+          <img class="minimenu" id="mininavlines" src="../../pictures/minimenu.png" alt="MENU">
+        </div>
+        <div class="flex-centre-horizontal-vertical">
+          <div class="nav-logo">
+            <a href="../../index.html"><img title="RuMac" src="../../pictures/logo/logo.png" alt="RuMac Logo"></a>
+          </div>
+        </div>
+      </div>
+      <p class="line">Hidden Line</p>
+
+      <script>
+        const mininavlines = document.getElementById("mininavlines");
+        const mininav = document.getElementById('mininav');
+        const navimg = document.getElementById('navimg');
+        const navimg2 = document.getElementById('navimg2');
+        
+        document.onclick = function(e) {
+          if(e.target.id !== 'mininav' && e.target.id !== 'mininavlines' && e.target.id !== 'navimg') {
+            mininav.classList.remove('active');
+            mininavlines.classList.remove('active');
+            navimg.classList.remove('active');
+            navimg2.classList.remove('active');
+          }
+        }
+        
+        mininavlines.onclick = function(){
+          mininav.classList.toggle('active');
+          mininavlines.classList.toggle('active');
+          navimg.classList.toggle('active');
+          navimg.classList.toggle('active');
+        }
+      </script>
+      
+      <nav class="nav">
+        <ul>
+          <div style="display: flex; justify-content: space-between;" class="flex-parent">
+            
+            <div class="nav-first">
+              <ul>
+                <li class="disabled-small-padding disabled" title="Tighinn a dh'Aithghearr. / Coming Soon.">Gaelic</li>
+                <li class="nav-not-link"><a>/</a></li>
+                <li class="small-padding a"><a href="#">English</a></li>
+              </ul>
+            </div>
+                
+            <div class="nav-centre">
+              <ul>
+                <li class="a"><a href="../../index.html">Home</a></li>
+                <li class="a"><a href="../shop/shop.html">Shop</a></li>
+                <li class="a"><a href="../solve/solve.html">Solve</a></li>
+                <li class= "a"><a href="../comments.html">Comments<!--<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"> 1000</span>--></a></li>
+              </ul>
+            </div>
+      
+            <div class="nav-last">
+              <ul>
+                <li class="disabled-small-padding disabled" title="Coming Soon">Light</li>
+                <li class="nav-not-link"><a>\</a></li>
+                <li class="small-padding a"><a href="#">Dark</a></li>
+              </ul>
+            </div>
+            
+          </div>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="all">
+      <div class="rubikpicturerounds paragraphnormal centreimg">
+        <div style="margin-top: -17px">
+          <h1 class="bigh1">How to solve the 3X3</h1>
+          <h1 class="mar-top--65 bigh1">Beginner's Method</h1>
+        </div>
+
+        <h2 class="bigh2" >Identifying the Pieces</h2>
+
+        <!-- Row -->
+        
+        <div style="margin-top: -50px;" class="middle">
+          <div>
+            <p class="centretexttop"><img src="TurnPictures/Centre.png" alt="Centre Piece"></p>
+            <div class="piece">
+              <h3>centre piece</h3>
+            </div>
+          </div>
+          <div>
+            <p class="centretext"><img src="TurnPictures/Edge.png" alt="Edge Piece"></p>
+            <div class="piece">
+              <h3>edge pieces</h3>
+            </div>
+          </div>
+          <div>
+            <p class="centretext"><img src="TurnPictures/Corner.png" alt="Corner Piece"></p>
+            <div class="piece">
+              <h3>corner pieces</h3>
+            </div>
+          </div>   
+        </div>
+        <div>
+
+        <div class="middleWriting">
+          <div>
+            <h3>centre piece</h3>
+          </div>
+          <div>
+            <h3>edge pieces</h3>
+          </div>
+          <div>
+            <h3>corner pieces</h3>
+          </div>   
+        </div>
+
+        <h2 class="bigh2 wtlm" style="padding-top: 20px;">What the Letters Mean</h2>
+
+        <div class="showbigsolve showbigsolvehidesmall">
+          <div style="margin-top: -30px">
+            <div class="side">
+              <div>
+                <img src="../../pictures/solve/3x3/L.png" alt="Turn the left side down once.">
+              </div>
+              <div>
+                <img src="../../pictures/solve/3x3/L'.png" alt="Turn the left side up once.">
+              </div>
+              <div>
+                <p class="showbig" style="padding-top: 50px;">L - turn the left hand side down towards you</p><p class="showbig">L' - turn the left hand side up away from you</p> 
+              </div>
+            </div>
+
+            <div class="sider">
+              <div>
+                <p class="showmediumr" style="padding-top: 50px;">&nbsp; R - turn the right hand side up away from you</p><p class="showmediumr">R' - turn the right hand side down towards you</p> 
+              </div>
+              <div>
+                <img src="../../pictures/solve/3x3/R.png" alt="Turn the right side up once.">
+              </div>
+              <div>
+                <img src="../../pictures/solve/3x3/R'.png" alt="Turn the right side down once.">
+              </div>
+              <div style="margin-left: 10px;">
+                <p class="showbigm" style="padding-top: 50px;">R - turn the right hand side up away from you</p><p class="showbigm">&nbsp; R' - turn the right hand side down towards you</p> 
+              </div>
+            </div>
+
+            <div class="side">
+              <div>
+                <img src="../../pictures/solve/3x3/U.png" alt="Turn the upper face to the right once.">
+                <p class="showsmall">U - turn the upper face to the right &nbsp;</p>
+              </div>
+              <div>
+                <img src="../../pictures/solve/3x3/U'.png" alt="Turn the upper face to the left once.">
+                <p class="showsmall">U' turn thr upper face to the left</p>
+              </div>
+              <div style="margin-top: 15px">
+                <p class="showbig" style="padding-top: 50px;">U - turn the upper face to the right</p><p class="showbig">&nbsp; U' - turn the upper face to the left</p> 
+              </div>
+            </div>
+
+            <div class="sidef">
+              <div>
+                <p class="showmedium" style="padding-top: 50px;">&nbsp; F - turn the front face to the right</p><p class="showmedium">F' - turn the front face to the left</p> 
+              </div>
+              <div>
+                <img src="../../pictures/solve/3x3/F.png" alt="Turn the front face to the right once.">
+              </div>
+              <div>
+                <img src="../../pictures/solve/3x3/F'.png" alt="Turn the front face to the left once.">
+              </div>
+              <div>
+                <p class="showbigm" style="padding-top: 50px;">&nbsp; F - turn the front face to the right</p><p class="showbigm">F' - turn the front face to the left</p> 
+              </div>
+            </div>
+
+            <div class="side">
+              <div>
+                <img src="../../pictures/solve/3x3DL.png" alt="Turn the bottom face to the left once.">
+                <p class="showsmall">D - turn the bottom face to the left &nbsp;</p>
+              </div>
+              <div>
+                <img src="../../pictures/solve/3x3/D'.png" alt="Turn the bottom face to the right once.">
+                <p class="showsmall">D' turn thr bottom face to the right</p>
+              </div>
+              <div style="margin-top: 15px">
+                <p class="showbig" style="padding-top: 50px;">D - turn the bottom face to the left</p><p class="showbig">&nbsp; D' - turn the bottom face to the right</p> 
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <p class="centresmall"><img src="../../pictures/solve/3x3/L.png" alt="Turn the left side down once."> <img src="../../pictures/solve/3x3/L'.png" alt="Turn the left side up once."></p>
+        <div class="centresmallpbox">
+          <p class="centresmallp">L - turn the left hand side down towards you</p>
+          <p class="centresmallp">L' - turn the left hand side up away from you</p>
+        </div>
+
+        <p class="centresmall"><img src="../TurnPictures/R.png" alt="Turn the left side down once."> <img src="../../pictures/solve/3x3/R.png" alt="Turn the left side up once."></p>
+        <div class="centresmallpbox">
+          <p class="centresmallp">R - turn the right hand side up away from you</p>
+          <p class="centresmallp">R' - turn the right hand side down towards you</p>
+        </div>
+
+        <p class="centresmall"><img src="../TurnPictures/U.png" alt="Turn the upper face to the left once."> <img src="../TurnPictures/U'.png" alt="Turn the upper face to the right once."></p>
+        <div class="centresmallpbox">
+          <p class="centresmallp">U - turn the upper face to the right</p>
+          <p class="centresmallp">U' - turn the upper face to the left</p>
+        </div>
+
+        <p class="centresmall"><img src="../TurnPictures/F.png" alt="Turn the front face to the right once."> <img src="../TurnPictures/F'.png" alt="Turn the front face to the left once."></p>
+        <div class="centresmallpbox">
+          <p class="centresmallp">F - turn the front face to the right</p>
+          <p class="centresmallp">F' - turn the front face to the left</p>
+        </div>
+
+        <p class="centresmall"><img src="../TurnPictures/D.png" alt="Turn the bottom face to the left once."> <img src="../TurnPictures/D'.png" alt="Turn the bottom face to the right once."></p>
+        <div class="centresmallpbox">
+          <p class="centresmallp">D - turn the bottom face to the left</p>
+          <p class="centresmallp">D' - turn the bottom face to the right</p>
+        </div>
+
+        <h2 class="bigh2" style="padding-top: 20px;">Useful Algorithms to Learn</h2>
+        <p>#1 &nbsp; U R U' R' F R' F' R</p>
+        <p>#2 &nbsp; U' L' U L F' L F L'</p>
+        <p>#3 &nbsp; F R U R' U' F'</p>
+        <p>#4 &nbsp; R U R' U R U2 R'</p>
+        <p>#5 &nbsp; R D R' D' R D R' D'</p>
+        <p>#6 &nbsp; R' D2 R U R' D2 R U R' D2 R U2 R' D2 R</p>
+
+        <h2 class="bigh2" style="padding-top: 20px;">Now for the Solve!</h2>
+        <div class="comingsoon">
+          <p class="small-smallp">(More Videos Coming Soon!  In the meantime, try memorising the algorithms above!)</p>
+        </div>
+        <!-- /Row -->
+      </div>
+      <div class="alignLeft">
+          <h3>1. <a class="blue-link" href="https://www.youtube.com/watch?v=8O3WuJkQ0x4&t=22s`">Bottom Cross</a></h3>
+          <h3>2. <a class="blue-link" href="https://www.youtube.com/watch?v=dT8nLPAznLM">Bottom Corners</a></h3>
+          <h3>3. <a class="blue-link" href="https://www.youtube.com/watch?v=wo386804klM">Second Layer</a></h3>
+          <h3>4. <a class="blue-link" href="https://www.youtube.com/watch?v=cU10AFgy6j0&t=7s">Top Cross</a></h3>
+          <h3>5. <a class="blue-link" href="https://www.youtube.com/watch?v=YlAS1-5jeq0&t=1s">Top Corners</a></h3>
+          <h3>6. <a class="blue-link" href="https://www.youtube.com/watch?v=ZPivPGdkgRM">Fix The Top Layer</a></h3>
+        </div>
+      </div>
+
+    <div class="footer" id="footer">
+      <p> <!-- <a href="" class="left text cursor-pointer underline-hover">Report a Problem</a> --> Copyright &copy; <script>document.write(new Date().getFullYear())</script>. &nbsp; All rights reserved.<a class="ruagan" href="ruagan/index.html">RuaGan</a></p>
+    </div>
+  </body>
+</html>

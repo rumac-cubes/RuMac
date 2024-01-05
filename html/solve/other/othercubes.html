@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="../../../pictures/logo/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RuMac - Other Cubes</title>
+    <link rel="stylesheet" href="../.../../css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../../../css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="../../../css/lightbox.css">
+
+    <script type="text/javascript" src="../../../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../../../js/jquery.js"></script>
+    <script type="text/javascript" src="../../../js/script.js"></script>
+    <script type="text/javascript" src="../../../js/lightbox.js"></script>
+  </head>
+  <body>
+    <p class="signin" title="Sign In"><a class="signIn" href="../signin.html">Sign In</a></p>
+    <p class="button-img d-none d-md-block" title="Basket"><a class="../basket.html" href="basket.html">Basket</a></p>
+    <p class="button-img d-none d-md-block" title="Wishlist"><a class="../wishlist.html" href="wishlist.html">Wishlist</a></p>
+    <div class="nav-background">
+      
+      <nav id="mininav">
+        <ul>
+          <li><img id="navimg" src="../../../pictures/mininav/home.png"><a href="../../../index.html">Home</a></li>
+          <li><img id="navimg2" src="../../../pictures/mininav/solve.png"><a href="../solve.html">Solve</a></li>
+          <li><img id="navimg" src="../../../pictures/mininav/comments.png">&nbsp;<a href="../../comments.html">Comments</a></li>
+          <li><img id="navimg2" src="../../../pictures/mininav/dot.png"><a href="../../shop/shop.html">Shop</a></li>
+          <li class="indent"><img id="navimg" src="../../../pictures/mininav/wishlist.png">&nbsp;<a href="../../wishlist.html">Wishlist</a></li>
+          <li class="indent"><img id="navimg2" src="../../../pictures/mininav/basket.png">&nbsp;<a href="../../basket.html">Basket</a></li>
+          <li class="disabledlink"><img id="navimg" src="../../../pictures/mininav/light.png">&nbsp;<a href="#">Light&nbsp;Mode</a></li>
+          <li><img id="navimg2" src="../../../pictures/mininav/dark.png">&nbsp;<a href="#">Dark&nbsp;Mode</a></li>
+          <li class="disabledlink"><img id="navimg" src="../../../pictures/mininav/gai.png">&nbsp;<a href="#">G&agrave;idhlig</a></li>
+          <li><img id="navimg2" src="../../../pictures/mininav/eng.png">&nbsp;<a href="#">English</a></li>
+        </ul>
+      </nav>
+      
+      <div class="nav-background-img">
+        <div class="rumacwriting">
+          <img class="writingimg" src="../../../pictures/logo/rumacwriting.png" alt="RuMac">
+          <img class="minimenu" id="mininavlines" src="../../../pictures/minimenu.png" alt="MENU">
+        </div>
+        <div class="flex-centre-horizontal-vertical">
+          <div class="nav-logo">
+            <a href="../../../index.html"><img title="RuMac" src="../../../pictures/logo/logo.png" alt="RuMac Logo"></a>
+          </div>
+        </div>
+      </div>
+      <p class="line">Hidden Line</p>
+
+      <script>
+        const mininavlines = document.getElementById("mininavlines");
+        const mininav = document.getElementById('mininav');
+        const navimg = document.getElementById('navimg');
+        const navimg2 = document.getElementById('navimg2');
+        
+        document.onclick = function(e) {
+          if(e.target.id !== 'mininav' && e.target.id !== 'mininavlines' && e.target.id !== 'navimg') {
+            mininav.classList.remove('active');
+            mininavlines.classList.remove('active');
+            navimg.classList.remove('active');
+            navimg2.classList.remove('active');
+          }
+        }
+        
+        mininavlines.onclick = function(){
+          mininav.classList.toggle('active');
+          mininavlines.classList.toggle('active');
+          navimg.classList.toggle('active');
+          navimg.classList.toggle('active');
+        }
+      </script>
+      
+      <nav class="nav">
+        <ul>
+          <div style="display: flex; justify-content: space-between;" class="flex-parent">
+            
+            <div class="nav-first">
+              <ul>
+                <li class="disabled-small-padding disabled" title="Tighinn a dh'Aithghearr. / Coming Soon.">Gaelic</li>
+                <li class="nav-not-link"><a>/</a></li>
+                <li class="small-padding a"><a href="#">English</a></li>
+              </ul>
+            </div>
+                
+            <div class="nav-centre">
+              <ul>
+                <li class="a"><a href="../../../index.html">Home</a></li>
+                <li class="a"><a href="../../shop/shop.html">Shop</a></li>
+                <li class="a"><a href="../../solve/solve.html">Solve</a></li>
+                <li class= "a"><a href="../../comments.html">Comments<!--<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"> 1000</span>--></a></li>
+              </ul>
+            </div>
+      
+            <div class="nav-last">
+              <ul>
+                <li class="disabled-small-padding disabled" title="Coming Soon">Light</li>
+                <li class="nav-not-link"><a>\</a></li>
+                <li class="small-padding a"><a href="#">Dark</a></li>
+              </ul>
+            </div>
+            
+          </div>
+        </ul>
+      </nav>
+    </div>
+    <div class="css-container"n>
+      <div class="link space-around">
+      <h1 class="space-around"><a href="solve/2x2.html">2x2</a></h1>
+      <h1 class="space-around"><a href="other/othercubes.html">3x3</a></h1>
+      <h1 class="space-around s-font-s"><a href="speedsolving.html">4x4</a></h1>
+    </div>
+    <div class="footer">
+      <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script>. &nbsp; All rights reserved.<a class="ruagan" href="../../ruagan/index.html">RuaGan</a></p>
+    </div>
+    </div>
+  </body>
+</html>
